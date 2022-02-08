@@ -2,11 +2,35 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <div class="header">
+            <span class="hyper"><a href="#">Images</a></span>
+            <span class="hyper"><a href="#">Advanced Search</a></span>
+        </div>
+        <div class="main">
+            <div class="logo">
+               <span>M</span><span>y</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+            </div>
+            <form action="https://google.com/search">
+                <div class="searchbar">
+                    <span><i class="fas fa-search"></i></span>
+                    <input type="text" name="q" placeholder="Search here">
+                </div>
+                
+                <input type="submit" value="Google Search">
+                <input type="submit" value="I'm Feeling Lucky" id="lucky" name="btnI" data-ved="0ahUKEwiRlqrHrPD1AhXf8rsIHUPUBzoQ19QECAw">
+            </form>
+        </div>
+        <div class="footer">
+
+        </div>
     </body>
 </html>

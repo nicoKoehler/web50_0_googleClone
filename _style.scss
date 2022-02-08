@@ -1,0 +1,121 @@
+$color_blue: #4285F4;
+$color_red: #DB4437;
+$color_yellow: #F4B400;
+$color_green: #0F9D58;
+$color_grey: darkslategrey; 
+$font: "Roboto";
+
+body{
+    font-family: $font;
+}
+
+
+
+.header{
+    text-align: right;
+    color: $color_grey;
+    margin: 1vh 1vh 0 0;
+    font-size: 14px;
+    span{
+        margin-right: 10px;
+    }
+    a{
+        color: grey;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+
+}
+
+.main{
+    text-align: center;
+    padding-top: 20vh;
+
+
+    input[type="submit"]{
+        border:none;
+        font-size: 16px;
+        color: darkslategray;
+        border-radius: 3px;
+        background-color: #f8f9fa;
+        padding: 10px 20px;
+    }
+    input[type="submit"]:hover{
+        outline: solid 1px lightgrey;
+        cursor: pointer;
+    }
+    input[type="submit"]:active{
+        outline: solid 1px $color_blue;
+    }
+
+}
+
+.searchbar{
+    
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+    border-radius: 100px;
+    margin-bottom: 2vh;
+    font-size: 1.5em;
+    text-align: left;
+    border: lightgrey solid 1px;
+    color: lightgrey;
+
+
+    :first-child{
+        margin-left: 0.7vw;
+    }
+    input{
+        height: 90%;
+        width: 80%;
+        text-align: left;
+        border: none; 
+        font-size: 0.9em;
+        background-color: none;
+    }
+
+    input:focus{
+        outline: none;
+    }
+
+    i{
+        font-size: 0.8em;
+    }
+    
+}
+
+.logo{
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-bottom: 2vh  ;
+    span{
+        font-size: 2.5em;
+    }
+
+    span:nth-child(1){color: $color_blue}
+    span:nth-child(2){
+        color: $color_blue;
+        font-size: 0.5em;
+        
+    }
+    span:nth-child(3){color: $color_red}
+    span:nth-child(4){color: $color_yellow}
+    span:nth-child(5){color:$color_blue}
+    span:nth-child(6){color:$color_green}
+    span:nth-child(7){color:$color_red}
+}
+
+
+
+
+
+/*MEDIA*/
+
+@media (max-width: 800px){
+    .searchbar{
+        width: 80%;
+    }
+}
