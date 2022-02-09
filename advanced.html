@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+    </head>
+    <body>
+        <div class="header header_adv">
+            <div class="logo logo-top-sm">
+                <span>M</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span><span>.advanced</span>
+             </div>
+             <div class="nav">
+                <span class="hyper"><a href="index.html">Home</a></span>
+                <span class="hyper"><a href="images.html">Images</a></span>
+            </div>
+        </div>
+        <div class="main adv" id="main-adv">
+            <h3>Advanced Search</h3>
+            <hr>
+
+            <div class="form-wrap">
+                <h3 id="h3-find">Find pages with...</h3>
+
+                <form action="https://google.com/search">
+                    <div class="grid-wrap">
+                        <!-- ++++++++++++++++++ ALL ++++++++++++++++++ -->
+                        <div class="label" id="lbl-all">
+                            <label for="in-asq">all these words:</label>
+                        </div>
+                        <div class="input" id="in-all">
+                            <input type="text" name="as_q" id="in-asq">
+                        </div>
+                        <div class="desc" id="desc-all">
+                            <p>
+                                Type the important words:  <span>tri-colour rat terrier</span>
+                            </p>
+                        </div>
+                        <!-- ++++++++++++++++++ EXACT ++++++++++++++++++ -->
+                        <div class="label" id="lbl-ex">
+                            <label for="in-asq">this exact word or phrase:</label>
+                        </div>
+                        <div class="input" id="in-ex">
+                            <input type="text" name="as_epq" id="in-epq">
+                        </div>
+                        <div class="desc" id="desc-ex">
+                            <p>
+                                Put exact words in quotes:  <span>"rat terrier"</span>
+                            </p>
+                        </div>
+                        <!-- ++++++++++++++++++ ANY ++++++++++++++++++ -->
+                        <div class="label" id="lbl-any">
+                            <label for="in-asq">any of these words:</label>
+                        </div>
+                        <div class="input" id="in-any">
+                            <input type="text" name="as_oq" id="in-oq">
+                        </div>
+                        <div class="desc" id="desc-any">
+                            <p>
+                                Type OR between all the words you want:   <span>miniature OR standard</span>
+                            </p>
+                        </div>
+                        <!-- ++++++++++++++++++ NOT ++++++++++++++++++ -->
+                        <div class="label" id="lbl-not">
+                            <label for="in-asq">none of these words:</label>
+                        </div>
+                        <div class="input" id="in-not">
+                            <input type="text" name="as_eq" id="in-eq">
+                        </div>
+                        <div class="desc" id="desc-not">
+                            <p>
+                                Put a minus sign just before words that you don't want:  <br><span>-rodent, -"Jack Russell"</span>
+                            </p>
+                        </div>
+
+                        <div></div>
+
+                        <div>
+                            <input type="submit" value="Advanced Search" id="btn-adv-submit">
+                        </div>
+                    </div>
+
+                    
+                    
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </body>
+</html>

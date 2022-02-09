@@ -59,14 +59,14 @@ body{
     height: 40px;
     border-radius: 100px;
     margin-bottom: 2vh;
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: left;
     border: lightgrey solid 1px;
     color: lightgrey;
 
 
     :first-child{
-        margin-left: 0.7vw;
+        margin-left: 0.4vw;
     }
     input{
         height: 90%;
@@ -82,7 +82,7 @@ body{
     }
 
     i{
-        font-size: 0.8em;
+        font-size: 1em;
     }
     
 }
@@ -107,6 +107,123 @@ body{
     }
 }
 
+.logo-top-sm{
+    display: inline-block;
+    text-align: left;
+    height: 100%;
+    font-size: smaller;
+
+    span{
+        margin: 0;
+    }
+}
+
+.header_adv{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+
+#main-adv{
+    text-align: left;
+    padding-top: 5vh;
+
+    hr{
+        border: none;
+        border-bottom: #ebebeb solid 1px;
+    }
+    
+    > h3:first-child {
+        padding-left: 5vw;
+        font-weight: 400;
+        color: $color_red;
+    }
+}
+
+
+
+.form-wrap{
+    padding: 0 5vw;
+    h3{
+        font-weight: 400;
+    color: darkslategray;
+    }
+
+}
+
+.grid-wrap{
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr;
+    width: 1140px;
+    grid-row-gap: 1vh;
+    grid-column-gap: 1vh;
+}
+
+.grid-wrap > *{
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+
+    input{
+        width: 95%;
+        height: 25px;
+        border: #d9d9d9 solid 1px;
+        padding: 0 10px;
+    }
+    input:focus{
+        outline: 1px solid $color_blue;
+    }
+    
+
+
+}
+
+
+.grid-wrap{
+    div:last-child{
+        text-align: right;
+        
+    }
+}
+
+#btn-adv-submit{
+    width: 40%;
+    background: $color_blue;
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+
+.desc{
+    color: #555;
+    font-size: 11px;
+    display: flex; 
+    align-items: center;
+
+    p{
+        line-height: normal;
+        display: table-cell;
+        vertical-align: middle;
+        
+    }
+
+    span{
+        font-family: monospace;
+    }
+}
+
+
+
+
 
 
 
@@ -116,5 +233,28 @@ body{
 @media (max-width: 800px){
     .searchbar{
         width: 80%;
+    }
+}
+
+@media (max-width: 1000px){
+    .desc{
+        visibility: hidden; 
+    }
+}
+
+@media (max-width: 900px){
+    .grid-wrap{
+        grid-template-columns: 1fr;
+        width: 90%;
+        grid-row-gap: 0.5vh;
+        
+        > *{
+            font-size: 1em;
+        }
+    }
+
+    .desc{
+        display: none;
+        
     }
 }
