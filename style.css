@@ -55,26 +55,26 @@ body {
     font-size: 0.8em; }
 
 .logo {
-  font-size: 2.5em;
-  font-weight: 900;
+  font-size: 2em;
+  font-weight: 600;
   margin-bottom: 2vh; }
   .logo span {
     font-size: 2.5em; }
   .logo span:nth-child(1) {
     color: #4285F4; }
   .logo span:nth-child(2) {
-    color: #4285F4;
-    font-size: 0.5em; }
+    color: #DB4437; }
   .logo span:nth-child(3) {
-    color: #DB4437; }
-  .logo span:nth-child(4) {
     color: #F4B400; }
-  .logo span:nth-child(5) {
+  .logo span:nth-child(4) {
     color: #4285F4; }
-  .logo span:nth-child(6) {
+  .logo span:nth-child(5) {
     color: #0F9D58; }
-  .logo span:nth-child(7) {
+  .logo span:nth-child(6) {
     color: #DB4437; }
+  .logo span:nth-child(7) {
+    color: #4285F4;
+    font-size: 1em; }
 
 /*MEDIA*/
 @media (max-width: 800px) {
